@@ -8,4 +8,4 @@ spec:
   interval: 30s
   ref:
     branch: develop
-  url: https://github.com/sthapa/ServiceX
+  url: https://github.com/sthapa/servicex-charts
