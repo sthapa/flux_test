@@ -1,0 +1,13 @@
+---
+apiVersion: source.toolkit.fluxcd.io/v1beta1
+kind: HelmRepository
+metadata:
+  name: servicex
+  namespace: flux-system
+spec:
+  interval: 30s
+  url: https://ssl-hep.github.io/ssl-helm-charts/
+#  ignore: |
+#    /*
+#    !/charts/
+#    !/manifests/
