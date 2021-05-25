@@ -3,7 +3,7 @@ apiVersion: source.toolkit.fluxcd.io/v1beta1
 kind: GitRepository
 metadata:
   name: servicex
-  namespace: flux-system
+  namespace: sthapa
 spec:
   interval: 30s
   ref:
