@@ -5,8 +5,8 @@ metadata:
   name: servicex
   namespace: flux-system
 spec:
-  interval: 5m0s
-  path: ./kustomize
+  interval: 1m
+  path: ./manifest
   prune: true
   sourceRef:
     kind: GitRepository
