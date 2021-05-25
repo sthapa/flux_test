@@ -1,0 +1,26 @@
+---
+apiVersion: kustomize.toolkit.fluxcd.io/v1beta1
+kind: Kustomization
+metadata:
+  name: servicex
+  namespace: flux-system
+spec:
+  interval: 1m
+  path: ./manifests/development
+  prune: true
+  sourceRef:
+    kind: GitRepository
+    name: servicex-git
+  validation: client
+
+---
+apiVersion: source.toolkit.fluxcd.io/v1beta1
+kind: GitRepository
+metadata:
+  name: servicex
+  namespace: flux-system
+spec:
+  interval: 30s
+  ref:
+    branch: master
+  url: https://github.com/sthapa/servicex-charts  
