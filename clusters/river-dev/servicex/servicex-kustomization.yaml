@@ -17,7 +17,7 @@ spec:
 apiVersion: source.toolkit.fluxcd.io/v1beta1
 kind: GitRepository
 metadata:
-  name: servicex
+  name: servicex-git
   namespace: flux-system
 spec:
   interval: 30s
